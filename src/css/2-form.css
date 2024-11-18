@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    /* Вирівнює елементи вертикально */
+    max-width: 400px;
+    /* Максимальна ширина форми */
+    margin: 0 auto;
+    /* Центрує форму на екрані */
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* Кордони форми */
+    border-radius: 5px;
+    /* Закруглені кути */
+    background-color: #fff;
+    /* Білий фон для форми */
+}
+
+label {
+    margin-bottom: 10px;
+    /* Відступ між мітечками */
+}
+
+input[type="email"],
+textarea {
+    width: 100%;
+    /* 100% ширини контейнера */
+    padding: 10px;
+    /* Внутішні відступи */
+    margin-top: 5px;
+    /* Відступ між мітечками та полями вводу */
+    border: 1px solid #ccc;
+    /* Кордони полів вводу */
+    border-radius: 3px;
+    /* Закруглені кути */
+}
+
+button {
+    margin-top: 10px;
+    /* Відступ перед кнопкою */
+    padding: 10px;
+    /* Внутрішні відступи */
+    border: none;
+    /* Без кордонів */
+    background-color: #007bff;
+    /* Фон кнопки */
+    color: white;
+    /* Колір тексту */
+    border-radius: 3px;
+    /* Закруглені кути кнопки */
+    cursor: pointer;
+    /* Курсор рук */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Колір кнопки при наведенні */
+}
