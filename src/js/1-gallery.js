@@ -71,7 +71,7 @@ const images = [
 
 const galleryList = document.querySelector('.gallery-list');
 
-// Створюємо розмітку з використанням <li> для кожного елементу
+
 const galleryMarkup = images
   .map(({ preview, original, description }) => {
     return `
@@ -84,10 +84,10 @@ const galleryMarkup = images
   })
   .join('');
 
-// Додаємо розмітку в DOM
+
 galleryList.innerHTML = galleryMarkup;
 
-// Ініціалізація SimpleLightbox
+
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
