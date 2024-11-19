@@ -69,19 +69,23 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const galleryList = document.querySelector('.gallery-list');
 
+// Створюємо розмітку з використанням <li> для кожного елементу
 const galleryMarkup = images
   .map(({ preview, original, description }) => {
     return `
-      <a class="gallery-link" href="${original}">
-        <img class="gallery-image" src="${preview}" alt="${description}" />
-      </a>
+      <li class="gallery-item">
+        <a class="gallery-link" href="${original}">
+          <img class="gallery-image" src="${preview}" alt="${description}" />
+        </a>
+      </li>
     `;
   })
   .join('');
 
-gallery.innerHTML = galleryMarkup;
+// Додаємо розмітку в DOM
+galleryList.innerHTML = galleryMarkup;
 
 // Ініціалізація SimpleLightbox
 const lightbox = new SimpleLightbox('.gallery a', {
@@ -89,4 +93,3 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionPosition: 'bottom',
   captionDelay: 250,
 });
-
